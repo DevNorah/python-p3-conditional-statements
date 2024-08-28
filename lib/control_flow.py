@@ -8,13 +8,13 @@ def admin_login(username, password):
 
 def hows_the_weather(temperature):
     # your code here
-    if (temperature == 33):
+    if (temperature < 40):
         return "It's brisk out there!"
     
-    elif (temperature == 55):
+    elif (temperature <=65):
         return "It's a little chilly out there!"
     
-    elif (temperature == 99):
+    elif (temperature > 85):
         return "It's too dang hot out there!"
     
     else:
@@ -23,13 +23,13 @@ def hows_the_weather(temperature):
 
 def fizzbuzz(num):
     # your code here
-    if (num == 0 or num == 15 or num == 45):
+    if (num % 3 == 0 and num % 5 == 0):
         return "FizzBuzz"
     
-    elif (num == 3 or num == 42 or num == 33):
+    elif (num % 3 == 0):
         return "Fizz"
     
-    elif (num == 5 or num == 10 or num == 50):
+    elif (num % 5 == 0):
         return "Buzz"
     else:
         return num
